@@ -8,7 +8,7 @@ const app = express();
 
 const MongoClient  = require('mongodb').MongoClient;
 // const url = 'mongodb://localhost:27017';
-const url = 'mongodb+srv://e_mongo:e_dz_mongo_db@cluster0.r28tm.mongodb.net/test';
+const url = 'mongodb+srv://...';
 
 const cors = require('cors');
 router.use(express.urlencoded({extended: true}));
@@ -16,8 +16,7 @@ router.use(express.json());
 router.use(cors());
 
 
-/* GET home page. */
-var movie = {};//i ovaj dio preko loaclstorage-a uradit jer ako mi vise usera bude odjednom pokupit ce podatke samo od usera koji je zadnji odabrao film
+var movie = {};
 var user_email = "";
 var token = null;
 
